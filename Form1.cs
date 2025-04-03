@@ -2,7 +2,7 @@
 
 /*
 Joshua Whitmore
- 
+ Getahun Endalamaw
 */
 
 // kaleb hilla
@@ -13,6 +13,11 @@ namespace Assembly_emulator
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, System.EventArgs e)
+        {
+
         }
     }
 }
