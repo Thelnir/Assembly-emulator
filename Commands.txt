@@ -1,0 +1,44 @@
+Commands:
+
+LD - Load:
+Part 1: LD # R#			This loads a numerical integer value into the register number. Example: LD 5 R2 would load the value 5 into the register labled as R2
+Part 2: LD x R#			This loads a variable's value into the register number. Example: LD x R3 loads x's value into the register labeled as R3
+
+STR - Store:
+Part 3: STR x R2		Store the value from R2 into the variable x
+Part 3: STR y 3			Store the value 3 into the variable y
+
+JMP - Jump:
+Part 3: JMP #			Jump to the line number. Example: 1 JMP 5 jump to the fifth line of code skipping lines 2-4 (since we starting on line 1)
+Part 3: JMPZ #			Jump if R1 is == 0 to the line number, otherwise continue to the next line Example: 1 JMPZ 8 jump to the eigth line of code skipping lines 2-7 (since we starting on line 1), if it is not 0 continue onto line 2
+Part 3: JMPN #			Same logic if R1 is a negative number
+Part 3: JMPP #			Same logic if R1 is a positive number
+
+ADD - Adds:
+Part 1: ADD R# R# R#	This adds the first register and the second register and puts the final value in the third register. Example: ADD R1 R2 R3 adds R1 and R2 and puts the resulting value into R3
+Part 2: ADD # R# R#		This adds the first value and the first register and puts the final value in the second register. Example: ADD 1 R3 R2 adds 1 and R3 and puts the resulting value into R2
+Part 2: ADD R# # R#		This adds the first register and the value and puts the final value in the third register. Example: ADD R1 R2 R3 adds R1 and R2 and puts the resulting value into R3
+Part 2: ADD # # R#		This adds the first register and the second register and puts the final value in the third register. Example: ADD R1 R2 R3 adds R1 and R2 and puts the resulting value into R3
+
+SUB - Substracts:
+Part 1: SUB R# R# R#	This subtracts the first register and the second register and puts the final value in the third register. Example: SUB R1 R2 R3 subtracts R2 from R1 and puts the resulting value into R3
+Part 2: SUB # R# R#		This subtracts the first value and the first register and puts the final value in the second register. Example: SUB 1 R3 R2 subtracts R3 from 1 and puts the resulting value into R2
+Part 2: SUB R# # R#		This subtracts the first register and the value and puts the final value in the third register. Example: SUB R1 2 R3 subtracts 2 from R1 and puts the resulting value into R3
+Part 2: SUB # # R#		This subtracts the first register and the second register and puts the final value in the third register. Example: SUB 2 5 R1 subtracts 5 from 2 and puts the resulting value into R1
+
+MUL - Multiplies: Follow the logic for this from the ADD command but instead of addition it's multiplication
+Part 1: MUL R# R# R#	
+Part 2: MUL # R# R#	
+Part 2: MUL R# # R#		
+Part 2: MUL # # R#		
+
+DIV - Divides: Follow the logic for this from the SUB command but instead of subtraction it's division
+Part 1: DIV R# R# R#	
+Part 2: DIV # R# R#		
+Part 2: DIV R# # R#		
+Part 2: DIV # # R#		
+
+TRP - Trap: This is for other commands
+Part 2: TRP 1 end of program
+Part 2: TRP 2 input from user and places it into R3
+Part 1: TRP 3 output from R3 to (insert your choice from designing here)
