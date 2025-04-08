@@ -2,10 +2,10 @@
 
 /*
 Joshua Whitmore
- Getahun Endalamaw
+Getahun Endalamaw
+Kaleb Hilla
 */
 
-// kaleb hilla
 namespace Assembly_emulator
 {
     public partial class Form1 : Form
@@ -16,6 +16,11 @@ namespace Assembly_emulator
         }
 
         private void Form1_Load(object sender, System.EventArgs e)
+        {
+         
+        }
+
+        private void RunCode_Click(object sender, System.EventArgs e)
         {
 
         }
