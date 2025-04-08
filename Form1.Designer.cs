@@ -38,7 +38,7 @@
             // OutputRTB
             // 
             this.OutputRTB.Location = new System.Drawing.Point(453, 31);
-            this.OutputRTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.OutputRTB.Margin = new System.Windows.Forms.Padding(2);
             this.OutputRTB.Name = "OutputRTB";
             this.OutputRTB.Size = new System.Drawing.Size(160, 160);
             this.OutputRTB.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             // CommandInRTB
             // 
-            this.CommandInRTB.Location = new System.Drawing.Point(11, 35);
+            this.CommandInRTB.Location = new System.Drawing.Point(11, 31);
             this.CommandInRTB.Margin = new System.Windows.Forms.Padding(2);
             this.CommandInRTB.Name = "CommandInRTB";
             this.CommandInRTB.Size = new System.Drawing.Size(160, 160);
@@ -57,7 +57,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cascadia Mono", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 20);
             this.label1.TabIndex = 2;
@@ -76,7 +76,7 @@
             // RunCode
             // 
             this.RunCode.Font = new System.Drawing.Font("Cascadia Mono", 11.25F);
-            this.RunCode.Location = new System.Drawing.Point(11, 200);
+            this.RunCode.Location = new System.Drawing.Point(11, 196);
             this.RunCode.Name = "RunCode";
             this.RunCode.Size = new System.Drawing.Size(75, 25);
             this.RunCode.TabIndex = 4;
@@ -94,7 +94,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CommandInRTB);
             this.Controls.Add(this.OutputRTB);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
