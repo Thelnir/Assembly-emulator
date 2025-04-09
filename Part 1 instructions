@@ -1,18 +1,21 @@
 1 points:
 GUI Design (paper)
-GUI Design (visual studio)
-Creating Global variables for 3 Registers
-Display all 3 registers
-Change the values displayed if the value within the registers have changed.
+GUI Design (visual studio) //Josh
+Creating Global variables for 3 Registers //Josh, completed(?)
+Display all 3 registers //Josh, completed(?)
+Change the values displayed if the value within the registers have changed. //Josh, completed(?)
+//Note: Josh here. I'm taking the easy stuff to not drag down anyone else's grades because of my procrastination.
+
 2 points: 
 Saving the Commands into a List in the order they were read.
 Creating the object that holds all the user commands from the user input.
+
 3 points:
 Retrieving user input and separating it into an object that contains the following structures:
-
 Command, Var1, Var2, Var3
 Command, Var1, Var2
 Command, Var1
+
 Get the LD (for numbers only, not variables), ADD , SUB, MUL, DIV, and TRP to work. For all the mathematical operations focus only on getting the command R# R# R# to work.
  
 

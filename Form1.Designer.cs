@@ -1,6 +1,6 @@
 ﻿namespace Assembly_emulator
 {
-    partial class Form1
+    partial class AssemblyEmulator
     {
         /// <summary>
         /// Required designer variable.
@@ -33,23 +33,24 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.RunCode = new System.Windows.Forms.Button();
+            this.CommandLogRTB = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // OutputRTB
             // 
-            this.OutputRTB.Location = new System.Drawing.Point(453, 31);
-            this.OutputRTB.Margin = new System.Windows.Forms.Padding(2);
+            this.OutputRTB.Location = new System.Drawing.Point(604, 38);
+            this.OutputRTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.OutputRTB.Name = "OutputRTB";
-            this.OutputRTB.Size = new System.Drawing.Size(160, 160);
+            this.OutputRTB.Size = new System.Drawing.Size(212, 196);
             this.OutputRTB.TabIndex = 0;
             this.OutputRTB.Text = "";
             // 
             // CommandInRTB
             // 
-            this.CommandInRTB.Location = new System.Drawing.Point(11, 31);
-            this.CommandInRTB.Margin = new System.Windows.Forms.Padding(2);
+            this.CommandInRTB.Location = new System.Drawing.Point(15, 38);
+            this.CommandInRTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CommandInRTB.Name = "CommandInRTB";
-            this.CommandInRTB.Size = new System.Drawing.Size(160, 160);
+            this.CommandInRTB.Size = new System.Drawing.Size(212, 196);
             this.CommandInRTB.TabIndex = 1;
             this.CommandInRTB.Text = "";
             // 
@@ -57,9 +58,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cascadia Mono", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(16, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 20);
+            this.label1.Size = new System.Drawing.Size(155, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "Command input";
             // 
@@ -67,35 +69,47 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cascadia Mono", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(449, 9);
+            this.label2.Location = new System.Drawing.Point(599, 11);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 20);
+            this.label2.Size = new System.Drawing.Size(78, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Output";
             // 
             // RunCode
             // 
             this.RunCode.Font = new System.Drawing.Font("Cascadia Mono", 11.25F);
-            this.RunCode.Location = new System.Drawing.Point(11, 196);
+            this.RunCode.Location = new System.Drawing.Point(15, 241);
+            this.RunCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RunCode.Name = "RunCode";
-            this.RunCode.Size = new System.Drawing.Size(75, 25);
+            this.RunCode.Size = new System.Drawing.Size(100, 31);
             this.RunCode.TabIndex = 4;
             this.RunCode.Text = "Run Code";
             this.RunCode.UseVisualStyleBackColor = true;
             this.RunCode.Click += new System.EventHandler(this.RunCode_Click);
             // 
-            // Form1
+            // CommandLogRTB
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.CommandLogRTB.Location = new System.Drawing.Point(604, 238);
+            this.CommandLogRTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CommandLogRTB.Name = "CommandLogRTB";
+            this.CommandLogRTB.Size = new System.Drawing.Size(212, 196);
+            this.CommandLogRTB.TabIndex = 5;
+            this.CommandLogRTB.Text = "";
+            // 
+            // AssemblyEmulator
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 411);
+            this.ClientSize = new System.Drawing.Size(832, 506);
+            this.Controls.Add(this.CommandLogRTB);
             this.Controls.Add(this.RunCode);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CommandInRTB);
             this.Controls.Add(this.OutputRTB);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "AssemblyEmulator";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -110,6 +124,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button RunCode;
+        private System.Windows.Forms.RichTextBox CommandLogRTB;
     }
 }
 
