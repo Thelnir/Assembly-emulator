@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Assembly_emulator
 {
-    public class ExecuteCommand
+    public class ExecuteCommand //test
     {
         public Registers registers { get; private set; }
 
