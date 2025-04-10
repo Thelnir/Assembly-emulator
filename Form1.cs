@@ -17,8 +17,9 @@ namespace Assembly_emulator
             InitializeComponent();
             executecommand = new ExecuteCommand(OutputRTB);
             Registers registers = new Registers(OutputRTB);
-
         }
+        Registers registers;
+
 
         private void Form1_Load(object sender, System.EventArgs e)
         {
@@ -77,6 +78,6 @@ namespace Assembly_emulator
             OutputRTB.Text += ("\nRegister 3 = " + registers.reg3);
 
         }
-
     }
 }
+
