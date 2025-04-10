@@ -21,7 +21,7 @@ namespace Assembly_emulator
             PrintRegs();//Prints default register values to output, added by Josh
         }
 
-        private void RunCode_Click(object sender, System.EventArgs e)
+        private void OutputCommandResults(object sender, System.EventArgs e)
         {
             CommandLogRTB.Text += ("\n" + CommandInRTB.Text);//Josh
 

@@ -86,7 +86,7 @@
             this.RunCode.TabIndex = 4;
             this.RunCode.Text = "Run Code";
             this.RunCode.UseVisualStyleBackColor = true;
-            this.RunCode.Click += new System.EventHandler(this.RunCode_Click);
+            this.RunCode.Click += new System.EventHandler(this.OutputCommandResults);
             // 
             // CommandLogRTB
             // 
