@@ -61,11 +61,15 @@ namespace Assembly_emulator
         
         private void ExecuteCommands()
         {
+            //*****************
+            //Getahun
+            //*****************
+
             // if you are doing the list please replace UserCommand with the list name
-            foreach (var command in UserCommand)
+            /*foreach (var command in UserCommand)
             {
                 executecommand.CommandExecute(command, var1, var2, var3);
-            }
+            }*/
             OutputRTB.AppendText($"R1: {executecommand.Registers.reg1}\nR2: {executecommand.Registers.reg2}\nR3: {executecommand.Registers.reg3}\n");
             //Note: Forms elements DO NOT work outside of the parent forms' classes.
             OutputRTB.Text = ("Register 1 = " + registers.reg1);
