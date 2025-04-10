@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 /*
 Joshua Whitmore
@@ -17,8 +16,9 @@ namespace Assembly_emulator
         {
             InitializeComponent();
             executecommand = new ExecuteCommand(OutputRTB);
+            Registers registers = new Registers(OutputRTB);
+
         }
-        Registers registers = new Registers();
 
         private void Form1_Load(object sender, System.EventArgs e)
         {
@@ -58,7 +58,7 @@ namespace Assembly_emulator
                 MessageBox.Show("Did not work. Please try again.");
             }
         }
-        
+
         private void ExecuteCommands()
         {
             //*****************
@@ -70,7 +70,7 @@ namespace Assembly_emulator
             {
                 executecommand.CommandExecute(command, var1, var2, var3);
             }*/
-            OutputRTB.AppendText($"R1: {executecommand.Registers.reg1}\nR2: {executecommand.Registers.reg2}\nR3: {executecommand.Registers.reg3}\n");
+            OutputRTB.AppendText($"R1: {executecommand.registers.reg1}\nR2: {executecommand.registers.reg2}\nR3: {executecommand.registers.reg3}\n");
             //Note: Forms elements DO NOT work outside of the parent forms' classes.
             OutputRTB.Text = ("Register 1 = " + registers.reg1);
             OutputRTB.Text += ("\nRegister 2 = " + registers.reg2);
