@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35919.96 d17.13
+VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly emulator", "Assembly emulator.csproj", "{B2C6D688-8187-4E5D-868A-FC2D15C9CE1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeValTest", "..\TypeValTest\TypeValTest.csproj", "{3E6DB744-E752-4981-AACD-6826916728D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B2C6D688-8187-4E5D-868A-FC2D15C9CE1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2C6D688-8187-4E5D-868A-FC2D15C9CE1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2C6D688-8187-4E5D-868A-FC2D15C9CE1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E6DB744-E752-4981-AACD-6826916728D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E6DB744-E752-4981-AACD-6826916728D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E6DB744-E752-4981-AACD-6826916728D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E6DB744-E752-4981-AACD-6826916728D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
