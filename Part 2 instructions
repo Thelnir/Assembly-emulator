@@ -1,28 +1,39 @@
 Task:
 
-Create a document that assigns the following tasks points and difficulty as well as who is assigned which parts. Also complete all the tasks within the subsection "Tasks".
+Create a document that assigns the following tasks points and difficulty as well as who is assigned which parts. 
+Also complete all the tasks within the subsection "Tasks".
 
  
 
 Tasks:
 
-If any of part 1 is incomplete due to partners, complete part 1
-Additional commands labeled in 'Lab: Assembly Group Part 1' as part 2, complete
+If any of part 1 is incomplete due to partners, complete part 1.
+	Josh: GUI needs redone to satisfy part 2 requirements. 
+		  I have no clue how menustrips work, so I can't do that one.
+
+Additional commands labeled in 'Lab: Assembly Group Part 1' as part 2, complete.
+
 If you are separating who's doing which commands please list them as individual tasks with their own points.
+
 Additional command not in the previous assignment
 MOV R# R# //Example: MOV R1 R2 Moves the values in R1 to R2
+
 Read and Write Files
-Must use a menustrip
+	Must use a menustrip
+
 General information
-Must use a menustrip
+	Must use a menustrip
+
 Creation of Variables
-Must allow Infinite variables
+	Must allow Infinite variables
+
 Structure to variables:
-INT varName #
-CHAR varName #
-Treat all CHARs currently as INTs
+	INT varName #
+	CHAR varName #
+	Treat all CHARs currently as INTs
+
 An event of your own creation (not a prebuilt event like button1_click) must be created and tied to an event (like the click event).
-Must make sense
-Unit Testing
-Positives
-Negatives
+	Must make sense
+	Unit Testing
+	Positives
+	Negatives

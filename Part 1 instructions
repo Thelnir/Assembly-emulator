@@ -16,7 +16,8 @@ Command, Var1, Var2, Var3
 Command, Var1, Var2
 Command, Var1
 
-Get the LD (for numbers only, not variables), ADD , SUB, MUL, DIV, and TRP to work. For all the mathematical operations focus only on getting the command R# R# R# to work.
+Get the LD (for numbers only, not variables), ADD , SUB, MUL, DIV, and TRP to work. 
+For all the mathematical operations focus only on getting the command R# R# R# to work.
  
 
 This is not completed. It is still in progress. You'll be notified when it is done.
