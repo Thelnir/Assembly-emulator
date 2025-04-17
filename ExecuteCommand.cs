@@ -18,6 +18,32 @@ namespace Assembly_emulator
 
         public void CommandExecute(string command, int var1, int var2, int var3)
         {
+            switch (command) //Josh: Touched up code using a switch/case instead of if/else if/else
+            {
+                case "LD":
+                    registers.ExecuteLD(var1, var2);
+                    break;
+                case "ADD":
+                    registers.ExecuteADD(var1, var2, var3);
+                    break;
+                case "SUB":
+                    registers.ExecuteSUB(var1, var2, var3);
+                    break;
+                case "MUL":
+                    registers.ExecuteMUL(var1, var2, var3);
+                    break;
+                case "DIV":
+                    registers.ExecuteDIV(var1, var2, var3);
+                    break;
+                case "TRP":
+                    registers.ExecuteTRP(var1);
+                    break;
+                default:
+                        MessageBox.Show("Invalid input");
+                        break; 
+
+            }
+            /*
             if (command == "LD")
             {
                 registers.ExecuteLD(var1, var2);
@@ -42,6 +68,7 @@ namespace Assembly_emulator
             {
                 registers.ExecuteTRP(var1);
             }
+            /**/
         }
     }
 }
