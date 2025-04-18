@@ -37,6 +37,7 @@ namespace Assembly_emulator
             var userInput = CommandInRTB.Text;
             ParseCommands(userInput);
         }
+
         private void ParseCommands(string input)
         {
             try
@@ -53,12 +54,28 @@ namespace Assembly_emulator
                     executecommand.CommandExecute(command, var1, var2, var3);
 
                 }
+                OutputRegs();
+
             }
             catch
             {
                 MessageBox.Show("Did not work. Please try again.");
             }
         }
+
+        private void OutputTamperSeal(object sender, System.EventArgs e)
+        {
+            OutputRegs();
+        }
+
+        private void OutputRegs()
+        {
+            OutputRTB.Text = ("Register 1 = " + registers.reg1);
+            OutputRTB.Text += ("\nRegister 2 = " + registers.reg2);
+            OutputRTB.Text += ("\nRegister 3 = " + registers.reg3);
+
+        }
+
         /*
         private void ExecuteCommands()
         {

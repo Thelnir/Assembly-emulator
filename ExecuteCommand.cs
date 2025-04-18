@@ -49,7 +49,7 @@ namespace Assembly_emulator
                     break;
 
                 default:
-                        MessageBox.Show("Invalid input");
+                        MessageBox.Show("Invalid command");
                         break; 
 
             }

@@ -46,6 +46,7 @@
             this.OutputRTB.Size = new System.Drawing.Size(212, 196);
             this.OutputRTB.TabIndex = 0;
             this.OutputRTB.Text = "";
+            this.OutputRTB.TextChanged += new System.EventHandler(this.OutputRegs);
             // 
             // CommandInRTB
             // 

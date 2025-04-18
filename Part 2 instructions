@@ -15,8 +15,9 @@ Additional commands labeled in 'Lab: Assembly Group Part 1' as part 2, complete.
 
 If you are separating who's doing which commands please list them as individual tasks with their own points.
 
-Additional command not in the previous assignment
-MOV R# R# //Example: MOV R1 R2 Moves the values in R1 to R2
+Additional command not in the previous assignment //Josh, completed(?)
+MOV R# R# //Example: MOV R1 R2 Moves the values in R1 to R2 
+	//Josh: I'm calling this 1 point, since it was fairly simple to implement initially.
 
 Read and Write Files
 	Must use a menustrip
@@ -32,7 +33,8 @@ Structure to variables:
 	CHAR varName #
 	Treat all CHARs currently as INTs
 
-An event of your own creation (not a prebuilt event like button1_click) must be created and tied to an event (like the click event).
+An event of your own creation (not a prebuilt event like button1_click).
+Must be created and tied to an event (like the click event).
 	Must make sense
 	Unit Testing
 	Positives
