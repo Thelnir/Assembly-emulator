@@ -53,6 +53,10 @@ namespace Assembly_emulator
                 throw new DivideByZeroException("Cannot divide by zero.");
             }
         }
+        public void ExecuteMOV(int reg1, int reg2)
+        {
+            reg2 = reg1;
+        }
         public void ExecuteTRP(int code)
         {
             if (code == 3)
@@ -60,5 +64,6 @@ namespace Assembly_emulator
                 outputRTB.AppendText($"R3: {this.reg3}\n");
             }
         }
+
     }
 }

@@ -28,8 +28,7 @@ namespace Assembly_emulator
 
         private void OutputCommandResults(object sender, System.EventArgs e)
         {
-            CommandLogRTB.Text += ("\n" + CommandInRTB.Text);//Josh
-
+            CommandLogRTB2.Text += ("\n" + CommandInRTB.Text);//Josh
             PrintRegs();//Josh
         }
 
@@ -46,20 +45,21 @@ namespace Assembly_emulator
                 foreach (var line in lines)
                 {
                     var parts = line.Split(' ');
-                    var command = parts[0];
-                    var var1 = int.Parse(parts[1]);
-                    var var2 = int.Parse(parts[2].Substring(1));
-                    var var3 = parts.Length > 3 ? int.Parse(parts[3].Substring(1)) : 0;
+                    string command = parts[0];
+                    int var1 = int.Parse(parts[1].Substring(1));
+                    int var2 = int.Parse(parts[2].Substring(1));
+                    int var3 = parts.Length > 3 ? int.Parse(parts[3].Substring(1)) : 0;
+
+                    executecommand.CommandExecute(command, var1, var2, var3);
 
                 }
-                ExecuteCommands();
             }
             catch
             {
                 MessageBox.Show("Did not work. Please try again.");
             }
         }
-
+        /*
         private void ExecuteCommands()
         {
             //*****************
@@ -70,14 +70,14 @@ namespace Assembly_emulator
             /*foreach (var command in UserCommand)
             {
                 executecommand.CommandExecute(command, var1, var2, var3);
-            }*/
+            }
             OutputRTB.AppendText($"R1: {executecommand.registers.reg1}\nR2: {executecommand.registers.reg2}\nR3: {executecommand.registers.reg3}\n");
             //Note: Forms elements DO NOT work outside of the parent forms' classes.
             OutputRTB.Text = ("Register 1 = " + registers.reg1);
             OutputRTB.Text += ("\nRegister 2 = " + registers.reg2);
             OutputRTB.Text += ("\nRegister 3 = " + registers.reg3);
 
-        }
+        }/**/
     }
 }
 

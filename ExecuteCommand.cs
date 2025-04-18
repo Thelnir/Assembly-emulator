@@ -23,21 +23,31 @@ namespace Assembly_emulator
                 case "LD":
                     registers.ExecuteLD(var1, var2);
                     break;
+
                 case "ADD":
                     registers.ExecuteADD(var1, var2, var3);
                     break;
+
                 case "SUB":
                     registers.ExecuteSUB(var1, var2, var3);
                     break;
+
                 case "MUL":
                     registers.ExecuteMUL(var1, var2, var3);
                     break;
+
                 case "DIV":
                     registers.ExecuteDIV(var1, var2, var3);
                     break;
+
+                case "MOV":
+                    registers.ExecuteMOV(var1, var2);
+                    break;
+
                 case "TRP":
                     registers.ExecuteTRP(var1);
                     break;
+
                 default:
                         MessageBox.Show("Invalid input");
                         break; 
