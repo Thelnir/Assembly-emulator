@@ -54,8 +54,6 @@ namespace Assembly_emulator
                     executecommand.CommandExecute(command, var1, var2, var3);
 
                 }
-                OutputRegs();
-
             }
             catch
             {
@@ -63,18 +61,14 @@ namespace Assembly_emulator
             }
         }
 
-        private void OutputTamperSeal(object sender, System.EventArgs e)
-        {
-            OutputRegs();
-        }
-
-        private void OutputRegs()
+        private void OutputRegs(object sender, System.EventArgs e)
         {
             OutputRTB.Text = ("Register 1 = " + registers.reg1);
             OutputRTB.Text += ("\nRegister 2 = " + registers.reg2);
             OutputRTB.Text += ("\nRegister 3 = " + registers.reg3);
 
         }
+
 
         /*
         private void ExecuteCommands()
