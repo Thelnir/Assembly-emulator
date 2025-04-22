@@ -53,18 +53,6 @@ namespace Assembly_emulator
                         break; 
 
             }
-            /*
-            if (command == "LD")
-            {
-                registers.ExecuteLD(var1, var2);
-            }
-            else if (command == "ADD")
-            {
-                registers.ExecuteADD(var1, var2, var3);
-            }
-            else if (command == "SUB")
-            {
-                registers.ExecuteSUB(var1, var2, var3);
             }
             else if (command == "MUL")
             {
