@@ -73,7 +73,7 @@ namespace Assembly_emulator
             {
                 if (var2 != 0)
                     this.reg3 = this.reg2 / var2;
-            else
+                else
                     throw new DivideByZeroException("Cannot divide by zero.");
             }
             else
@@ -81,7 +81,7 @@ namespace Assembly_emulator
                 if (var2 != 0)
                     this.reg3 = var1 / var2;
                 else
-                throw new DivideByZeroException("Cannot divide by zero.");
+                    throw new DivideByZeroException("Cannot divide by zero.");
             }
             outputRTB.AppendText($"DIV {var1} {var2} R{reg3}\n");
         }

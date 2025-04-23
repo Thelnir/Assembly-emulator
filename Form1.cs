@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-﻿using System.Windows.Forms;
+using System.Windows.Forms;
 using System.Xml;
 
 /*
@@ -75,19 +75,19 @@ namespace Assembly_emulator
                     }
                     UserCommand.Add(parsedCommand);
 
-                    if (parts.Length == 3)
+                    if (parts.Length == 3)
                     {
                         int var1 = parts[1].StartsWith("R") ? int.Parse(parts[1].Substring(1)) : int.Parse(parts[1]);
                         int var2 = parts[2].StartsWith("R") ? int.Parse(parts[2].Substring(1)) : int.Parse(parts[2]);
                         executecommand.CommandExecute(command, var1, var2, 0);
-                }
+                    }
                     else if (parts.Length == 4)
                     {
                         int var1 = parts[1].StartsWith("R") ? int.Parse(parts[1].Substring(1)) : int.Parse(parts[1]);
                         int var2 = parts[2].StartsWith("R") ? int.Parse(parts[2].Substring(1)) : int.Parse(parts[2]);
                         int var3 = parts[3].StartsWith("R") ? int.Parse(parts[3].Substring(1)) : int.Parse(parts[3]);
                         executecommand.CommandExecute(command, var1, var2, var3);
-            }
+                    }
                 }
             }
             catch
@@ -96,16 +96,19 @@ namespace Assembly_emulator
             }
         }
 
+
         private void OutputRegs(object sender, System.EventArgs e)
         {
-            /*OutputRTB.Text = ("Register 1 = " + registers.reg1);
+            /**/
+            OutputRTB.Text = ("Register 1 = " + registers.reg1);
             OutputRTB.Text += ("\nRegister 2 = " + registers.reg2);
-            OutputRTB.Text += ("\nRegister 3 = " + registers.reg3);*/
+            OutputRTB.Text += ("\nRegister 3 = " + registers.reg3);
+            /**/
 
         }
 
 
-        
+        /*
         private void ExecuteCommands()
         {
             OutputRTB.Clear();
@@ -123,8 +126,9 @@ namespace Assembly_emulator
             }
             OutputRTB.AppendText($"R1: {executecommand.registers.reg1}\nR2: {executecommand.registers.reg2}\nR3: {executecommand.registers.reg3}\n");
         }
+        /**/
 
-        private void sAVEToolStripMenuItem_Click(object sender, System.EventArgs e)
+        private void MenuSaveCommandExe(object sender, System.EventArgs e)
         {
             XmlDocument xmlDoc = new XmlDocument();
             XmlNode CommandsNode = xmlDoc.CreateElement("COMMANDS");
@@ -153,7 +157,7 @@ namespace Assembly_emulator
             this.Close();
         }
 
-        private void oPENToolStripMenuItem_Click(object sender, System.EventArgs e)
+        private void MenuOpenCommandExe(object sender, System.EventArgs e)
         {
 
             XmlDocument xmlDoc = new XmlDocument();

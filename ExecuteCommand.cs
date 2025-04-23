@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace Assembly_emulator
 {
@@ -49,10 +44,11 @@ namespace Assembly_emulator
                     break;
 
                 default:
-                        MessageBox.Show("Invalid command");
-                        break; 
+                    MessageBox.Show("Invalid command");
+                    break;
 
             }
+            /*
             }
             else if (command == "MUL")
             {
